@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Changing Posts with Sidebar
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React application that demonstrates how to manage and display posts dynamically using `componentDidMount` and `componentDidUpdate` lifecycle methods. This project includes a sidebar for navigation between different posts. 
 
-## Available Scripts
+## Features  
 
-In the project directory, you can run:
+- Display a list of posts with a sidebar for easy navigation.
+- Utilize React's lifecycle methods to fetch and update posts.
+- Responsive design to enhance user experience across devices.
 
-### `npm start`
+## Getting Started  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To get a local copy of the repository for development and testing purposes, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites  
 
-### `npm test`
+- Node.js (version)  
+- npm (or Yarn)  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation  
 
-### `npm run build`
+1. Clone the repository:  
+   ```bash
+      git clone https://github.com/AliDeli80/posts.git  
+2. Navigate to the project directory:
+  ```bash
+  cd posts
+ ```
+3. Install the dependencies:
+  ```bash
+  npm install
+```
+or
+  ```bash
+   yarn install
+```
+  
+## Running the Application
+To run the application in development mode, use:
+  ```bash
+  npm start
+```  
+or
+  ```bash
+  yarn start
+```
+  
+The application will be accessible at http://localhost:3000 in your browser.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Lifecycle Methods
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### componentDidMount
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- This method is called once the component is mounted. It's typically used for making API calls to fetch data.
+- In this project, we use it to load the initial set of posts when the component is rendered.
 
-### `npm run eject`
+### componentDidUpdate
+- This method is called when the component updates due to state or props changes.
+- Here, it is used to update the displayed post content whenever the selected post changes due to user interaction.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributing
+Contributions are welcome! Please follow these steps:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Fork the repository.
+2. Create your feature branch:
+  ```bash
+  git checkout -b feature/YourFeature
+``` 
+3. Commit your changes:
+  ```bash
+  git commit -m "Add some feature"
+```  
+4. Push to the branch:
+  ```bash
+  git push origin feature/YourFeature
+```  
+5. Open a Pull Request.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is licensed under the [MIT License](LICENSE).
