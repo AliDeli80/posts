@@ -20,8 +20,9 @@ To get a local copy of the repository for development and testing purposes, foll
 ### Installation  
 
 1. Clone the repository:  
-   ```bash
-      git clone https://github.com/AliDeli80/posts.git  
+```bash
+   git clone https://github.com/AliDeli80/posts.git
+```  
 2. Navigate to the project directory:
   ```bash
   cd posts
